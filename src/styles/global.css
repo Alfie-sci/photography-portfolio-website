@@ -136,12 +136,12 @@ pre > code {
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
-	margin: 0px;
+	margin: 0;
 	font-size: 1.333em;
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid rgb(var(--accent));
 }
 @media (max-width: 720px) {
 	body {
@@ -168,4 +168,13 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+.profile-pic {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 1.5rem;
+	border: 3px solid #3B4252;   /* subtle Nord frame */
+	box-shadow: 0 10px 30px rgba(129, 161, 193, 1);
 }
