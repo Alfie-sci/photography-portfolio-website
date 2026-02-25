@@ -177,8 +177,4 @@ hr {
 	margin-bottom: 1.5rem;
 	border: 3px solid #3B4252;   /* subtle Nord frame */
 	box-shadow: 0 10px 30px rgba(129, 161, 193, 1);
-
-	display: block;
-	margin-left: calc(50% - 20px);
-	margin-right: auto;
 }
