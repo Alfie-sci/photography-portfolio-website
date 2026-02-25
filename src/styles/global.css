@@ -6,7 +6,7 @@
 
 :root {
 
-	--bg: #4C566A;
+	--bg: #363c4a;
 	--bg-soft: #4C566A;
 	--text: #ECEFF4;
 	--text-soft: #D8DEE9;
@@ -30,8 +30,8 @@ body {
 	background-size: 120% 120%;
 	background: radial-gradient(
 			circle at top,
-			#4C566A 0%,
-			#2E3440 40%
+			#4c566a 0%,
+			#363c4a 25%
 	) no-repeat 50% 0;
 	animation: pulseGradient 12s ease-in-out infinite;
 }
@@ -72,22 +72,23 @@ h1 {
 	font-size: 3rem;
 	font-weight: 500;
 	margin-bottom: 0.5rem;
+	color: var(--text);
 }
 h2 {
 	font-size: 2.441em;
-	color: var(--text);
+	color: var(--text-soft);
 }
 h3 {
 	font-size: 1.953em;
-	color: var(--accent);
+	color: var(--text-soft);
 }
 h4 {
 	font-size: 1.563em;
-	color: var(--accent);
+	color: var(--text-soft);
 }
 h5 {
 	font-size: 1.25em;
-	color: var(--accent);
+	color: var(--text-soft);
 }
 strong,
 b {
@@ -183,11 +184,10 @@ hr {
 	padding: 1.5rem 2rem;
 	margin-top: 1.5rem;
 
-	background: rgba(46, 52, 64, 0.6);
-	border: 1px solid rgba(129, 161, 193, 0.3);
+	background: rgba(59, 66, 82, 1);
 	border-radius: 12px;
 
-	backdrop-filter: blur(8px);
+	backdrop-filter: blur(4px);
 }
 @keyframes pulseGradient {
 	0% {
