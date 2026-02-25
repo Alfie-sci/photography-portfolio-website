@@ -8,6 +8,7 @@
 
 	--bg: #363c4a;
 	--bg-soft: #4C566A;
+	--bg-light: #5A657A;
 	--text: #ECEFF4;
 	--text-soft: #D8DEE9;
 	--accent: #81a1c1;
@@ -188,6 +189,12 @@ hr {
 	border-radius: 12px;
 
 	backdrop-filter: blur(4px);
+}
+footer {
+	position: relative;
+	background: var(--bg);
+	text-align: center;
+	padding: 0 1em 2em 1em;
 }
 @keyframes pulseGradient {
 	0% {
