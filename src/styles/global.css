@@ -31,9 +31,9 @@ body {
 	background: radial-gradient(
 			circle at top,
 			#4C566A 0%,
-			#2E3440 60%
+			#2E3440 80%
 	) no-repeat 50% 0;
-	animation: pulseGradient 14s ease-in-out infinite;
+	animation: pulseGradient 12s ease-in-out infinite;
 }
 @font-face {
 	font-family: "Atkinson";
