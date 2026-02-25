@@ -9,8 +9,8 @@
 	--bg-soft: #4C566A;
 	--text: #ECEFF4;
 	--text-soft: #D8DEE9;
-	--accent: #4C566A;
-	--highlight: #A3BE8C;
+	--accent: #81a1c1;
+	--highlight: #8fbcbb;
 	--muted: #4C566A;
 }
 
@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
+	color: var(--accent);
 	line-height: 1.2;
 }
 h1 {
