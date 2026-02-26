@@ -17,10 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<h1>Alfie Ralls</h1>
 				<h5>Computer science student, photographer of anything worth documenting, Wikipedia contributor</h5>
 			</div>
-			<section class="network-section">
-				<h4>Rail Network Explorer</h4>
-				<svg id="network" viewBox="0 0 800 500"></svg>
-			</section>
+
 			<div>
 				<p>
 					Welcome to my website!
@@ -30,49 +27,3 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		</body>
 	</main>
 </html>
-
-<script>
-	const stations = [
-		{ id: "LAN", name: "Lancaster", x: 300, y: 120 },
-		{ id: "PRE", name: "Preston", x: 340, y: 200 },
-		{ id: "CAR", name: "Carlisle", x: 280, y: 60 }
-	];
-
-	const connections = [
-		{ from: "LAN", to: "PRE" },
-		{ from: "LAN", to: "CAR" }
-	];
-
-	const svg = document.getElementById("network");
-
-	// Draw edges first (so they sit behind nodes)
-	connections.forEach(edge => {
-		const from = stations.find(s => s.id === edge.from);
-		const to = stations.find(s => s.id === edge.to);
-
-		const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-		line.setAttribute("x1", from.x);
-		line.setAttribute("y1", from.y);
-		line.setAttribute("x2", to.x);
-		line.setAttribute("y2", to.y);
-		line.setAttribute("stroke", "#888");
-		line.setAttribute("stroke-width", "2");
-
-		svg.appendChild(line);
-	});
-
-	// Draw nodes
-	stations.forEach(station => {
-		const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-		circle.setAttribute("cx", station.x);
-		circle.setAttribute("cy", station.y);
-		circle.setAttribute("r", "8");
-		circle.setAttribute("fill", "#ff5555");
-		circle.style.cursor = "pointer";
-
-		circle.addEventListener("click", () => {
-			alert(station.name);
-		});
-		svg.appendChild(circle);
-	});
-</script>
