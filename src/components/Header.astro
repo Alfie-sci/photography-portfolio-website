@@ -3,21 +3,14 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<!--<header>
-	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/src/pages/Photos">Photos</HeaderLink>
-		</div>
-	</nav>
-</header>-->
+<header>
+    <nav class="pill-nav">
+        <HeaderLink href="/">Home</HeaderLink>
+        <HeaderLink href="/About">About</HeaderLink>
+        <HeaderLink href="/Photos">Photos</HeaderLink>
+    </nav>
+</header>
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: var(--bg);
-	}
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -27,21 +20,37 @@ import { SITE_TITLE } from '../consts';
 	h2 a.active {
 		text-decoration: none;
 	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--text-soft);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .pill-nav {
+        display: flex;
+        background: var(--bg-light);
+        border-radius: 999px;
+        backdrop-filter: blur(4px);
+    }
+
+    .pill-nav a {
+        padding: 0.6rem 1.2rem;
+        border-radius: 999px;
+        text-decoration: none;
+        color: var(--text-soft);
+        transition: background 0s ease, color 0s ease;
+    }
+
+    .pill-nav a:hover {
+        background: rgba(129, 161, 193, 0.15);
+        color: var(--text);
+    }
+
+    .pill-nav a.active {
+        background: var(--accent);
+        color: var(--text);
+    }
 	.social-links,
 	.social-links a {
 		display: flex;
