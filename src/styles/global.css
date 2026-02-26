@@ -27,7 +27,7 @@ body {
 	color: var(--text);
 	font-size: 20px;
 	line-height: 1.7;
-	overflow: hidden;
+	overflow: visible;
 
 	background-size: 120% 120%;
 	background: radial-gradient(
@@ -71,7 +71,7 @@ h6 {
 	margin-top: 0;
 }
 h1 {
-	font-size: 3rem;
+	font-size: 5rem;
 	font-weight: 500;
 	margin-bottom: 0.5rem;
 	color: var(--text);
@@ -184,7 +184,8 @@ hr {
 .intro-box {
 	max-width: 650px;
 	padding: 1.5rem 2rem;
-	margin-top: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 
 	background: var(--bg-soft);
 	border-radius: 12px;
@@ -197,6 +198,18 @@ footer {
 	background: var(--bg);
 	text-align: center;
 	padding: 0 1em 1em 1em;
+	margin-top: 1rem;
+}
+.network-section {
+	margin-top: 3rem;
+}
+
+#network {
+	width: 100%;
+	max-width: 800px;
+	height: 500px;
+	border-radius: 16px;
+	background: var(--bg-soft);
 }
 .social-icons {
 	display: flex;
