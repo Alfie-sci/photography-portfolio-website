@@ -23,7 +23,7 @@ body {
 	padding: 0;
 	text-align: left;
 	word-wrap: break-word;
-	overflow-wrap: break-word;
+	overflow-wrap: normal;
 	color: var(--text);
 	font-size: 20px;
 	line-height: 1.7;
@@ -32,8 +32,8 @@ body {
 	background-size: 120% 120%;
 	background: radial-gradient(
 			circle at top,
-			#4c566a 0%,
-			#363c4a 25%
+			#4c566a 10%,
+			#363c4a 50%
 	) no-repeat 50% 0;
 	animation: pulseGradient 20s ease-in-out infinite;
 }
