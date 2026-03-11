@@ -7,25 +7,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<main>
-		<head>
-			<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		</head>
+<head>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
 		<body>
 			<Header />
-			<div>
+			<main>
 				<h1>Alfie Ralls</h1>
-				<h5>Computer science student, photographer of anything worth documenting, Wikipedia contributor</h5>
-			</div>
-				<image>
-					<img src="/homepageFeature.jpeg" alt="Hills in Wales" class="Photo" width={600}/>
-				</image>
-			<div>
-				<p>
-					Welcome to my website!
-				</p>
-			</div>
+				<div class="intro-box">
+					<h5>Computer science student, photographer of anything worth documenting, Wikipedia contributor</h5>
+				</div>
+					<image>
+						<img src="/homepageFeature.jpeg" alt="Hills in Wales" class="Photo" width={600}/>
+					</image>
+				<div>
+					<p>
+						Welcome to my website!
+					</p>
+				</div>
+			</main>
 		<Footer />
 		</body>
-	</main>
 </html>

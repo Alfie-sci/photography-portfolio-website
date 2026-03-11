@@ -7,16 +7,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-<main>
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+</head>
+
     <body>
-    <Header />
-    <div>
-        <h1>Photos</h1>
-    </div>
-    <Footer />
+    <main>
+        <Header />
+        <div>
+            <h1>Photos</h1>
+        </div>
+        <div class="gallery">
+                <img src="/gallery/photo1.jpeg" alt="The engineering building and management school at Lancaster" />
+                <img src="/gallery/photo2.jpeg" alt="A spirited departure of a steam train from Kidderminster" />
+                <img src="/gallery/photo3.jpeg" alt="A view of greenery in Snowdonia, Wales" />
+         </div>
+        <Footer />
+    </main>
     </body>
-</main>
 </html>
