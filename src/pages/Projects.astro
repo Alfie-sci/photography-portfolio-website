@@ -2,21 +2,79 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
+<head>
+    <BaseHead title="Projects — Alfie Ralls" description="Things I'm building" />
+</head>
+
+<body>
+<Header />
 <main>
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <body>
-    <Header />
     <div>
         <h1>Projects</h1>
+        <div class="intro-box">
+            Most of what I do is open source. Track my progress and find my code on <a href="https://github.com/Alfie-sci" target="_blank">Github</a>
+        </div>
     </div>
-    <Footer />
-    </body>
+
+    <div class="projects-grid">
+        <article class="project-card active" data-updated="2026-03-11">
+            <div class="card-header">
+                <span class="tag">Web</span>
+                <span class="status active-status">● Active</span>
+            </div>
+            <h4>This Website</h4>
+            <p>A personal portfolio and photography site built with Astro and hosted via Cloudflare Pages. Exploring web fundamentals, CSS layout, and static site generation.</p>
+            <div class="card-footer">
+                <span class="tech">Astro · CSS · Cloudflare</span>
+                <span class="updated">Updated Mar 2026</span>
+            </div>
+        </article>
+
+        <article class="project-card" data-updated="2026-03-20">
+            <div class="card-header">
+                <span class="tag">Infra</span>
+                <span class="status active-status">● Active</span>
+            </div>
+            <h4>Homelab</h4>
+            <p>Repurposing a Dell Optiplex into a home server. Learning RAID configuration, self-hosted FOSS services, and the particular joy of networking over Eduroam.</p>
+            <div class="card-footer">
+                <span class="tech">Linux · RAID · Self-hosting</span>
+                <span class="updated">Updated Mar 2026</span>
+            </div>
+        </article>
+
+        <article class="project-card" data-updated="2026-03-01">
+            <div class="card-header">
+                <span class="tag">Raspberry Pi</span>
+                <span class="status planned-status">● Planned</span>
+            </div>
+            <h4>Train tracker</h4>
+            <p>A Raspberry Pi attached to a small display which will sit on my desk and pull from Network Rail APIs to display the most current train times for Lancaster</p>
+            <div class="card-footer">
+                <span class="tech">Unknown</span>
+                <span class="updated">Updated Mar 2026</span>
+            </div>
+        </article>
+
+        <article class="project-card" data-updated="2026-03-11">
+            <div class="card-header">
+                <span class="tag">Learning</span>
+                <span class="status inactive-status">● Inactive</span>
+            </div>
+            <h4>Top Trumps</h4>
+            <p>A Top Trumps card game implemented in Java as a vehicle for learning the language. Covering OOP and game logic from scratch.</p>
+            <div class="card-footer">
+                <span class="tech">Java</span>
+                <span class="updated">Updated Mar 2026</span>
+            </div>
+        </article>
+
+    </div>
 </main>
+<Footer />
+</body>
 </html>
