@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { projects } from '../data/projects';
+import { projects } from '../Data/projects';
 
 const sorted = [...projects].sort((a, b) => b.updated.getTime() - a.updated.getTime());
 ---
