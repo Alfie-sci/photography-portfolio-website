@@ -34,8 +34,16 @@ body {
 			circle at top,
 			#4c566a 10%,
 			#363c4a 30%
-	) repeat 50% 100%;
+	) no-repeat 50% 0;
 	animation: pulseGradient 20s ease-in-out infinite;
+}
+body {
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;     /* Firefox */
+}
+
+body::-webkit-scrollbar {
+	display: none;             /* Chrome, Safari, Opera */
 }
 @font-face {
 	font-family: "Inconsolata";
@@ -210,7 +218,7 @@ footer {
 		background-size: 190% 190%;
 		background-position: 50% 20%;
 	}
-	0% {
+	100% {
 		background-size: 110% 110%;
 		background-position: 50% 0;
 	}
