@@ -9,5 +9,5 @@ Hosted [here](https://portfolio-website.rtyq67nxmy.workers.dev/).
 The source code of this project is licensed under the MIT License — 
 see LICENSE for details.
 
-All photographs are © Alfie Ralls. All rights reserved.
+All photographs are ©Alfie Ralls. All rights reserved.
 Images may not be reused without permission.
